@@ -1,63 +1,6 @@
-15:30:52 **** Build of configuration Debug for project CMSISv2p00_LPC17xx ****
+16:25:30 **** Incremental Build of configuration Debug for project CMSISv2p00_LPC17xx ****
 make all 
-Building file: ../src/core_cm3.c
-Invoking: MCU C Compiler
-arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -I../inc -O0 -Os -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/core_cm3.d" -MT"src/core_cm3.d" -o "src/core_cm3.o" "../src/core_cm3.c"
-Finished building: ../src/core_cm3.c
- 
-Building file: ../src/system_LPC17xx.c
-Invoking: MCU C Compiler
-arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -I../inc -O0 -Os -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/system_LPC17xx.d" -MT"src/system_LPC17xx.d" -o "src/system_LPC17xx.o" "../src/system_LPC17xx.c"
-arm-none-eabi-ar: creating libCMSISv2p00_LPC17xx.a
-Finished building: ../src/system_LPC17xx.c
- 
-Building target: libCMSISv2p00_LPC17xx.a
-Invoking: MCU Archiver
-arm-none-eabi-ar -r  "libCMSISv2p00_LPC17xx.a"  ./src/core_cm3.o ./src/system_LPC17xx.o   
-Finished building target: libCMSISv2p00_LPC17xx.a
- 
-make --no-print-directory post-build
-Performing post-build steps
-arm-none-eabi-size libCMSISv2p00_LPC17xx.a ; # arm-none-eabi-objdump -h -S libCMSISv2p00_LPC17xx.a >libCMSISv2p00_LPC17xx.lss
-   text	   data	    bss	    dec	    hex	filename
-      0	      0	      0	      0	      0	core_cm3.o (ex libCMSISv2p00_LPC17xx.a)
-    432	      4	      0	    436	    1b4	system_LPC17xx.o (ex libCMSISv2p00_LPC17xx.a)
- 
-15:30:53 **** Build of configuration Debug for project LibTest ****
+make: Nothing to be done for `all'.
+16:25:31 **** Incremental Build of configuration Debug for project EBN_Anchor_Node ****
 make all 
-Building file: ../src/Drivers/lpc17xx_clkpwr.c
-Invoking: MCU C Compiler
-arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC17xx -I"/home/chuby/Dropbox/WorkSpace/CMSISv2p00_LPC17xx/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/Drivers/lpc17xx_clkpwr.d" -MT"src/Drivers/lpc17xx_clkpwr.d" -o "src/Drivers/lpc17xx_clkpwr.o" "../src/Drivers/lpc17xx_clkpwr.c"
-Finished building: ../src/Drivers/lpc17xx_clkpwr.c
- 
-Building file: ../src/Drivers/lpc17xx_libcfg_default.c
-Invoking: MCU C Compiler
-arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC17xx -I"/home/chuby/Dropbox/WorkSpace/CMSISv2p00_LPC17xx/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/Drivers/lpc17xx_libcfg_default.d" -MT"src/Drivers/lpc17xx_libcfg_default.d" -o "src/Drivers/lpc17xx_libcfg_default.o" "../src/Drivers/lpc17xx_libcfg_default.c"
-Finished building: ../src/Drivers/lpc17xx_libcfg_default.c
- 
-Building file: ../src/Drivers/lpc17xx_uart.c
-Invoking: MCU C Compiler
-arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC17xx -I"/home/chuby/Dropbox/WorkSpace/CMSISv2p00_LPC17xx/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/Drivers/lpc17xx_uart.d" -MT"src/Drivers/lpc17xx_uart.d" -o "src/Drivers/lpc17xx_uart.o" "../src/Drivers/lpc17xx_uart.c"
-Finished building: ../src/Drivers/lpc17xx_uart.c
- 
-Building file: ../src/cr_startup_lpc176x.c
-Invoking: MCU C Compiler
-arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC17xx -I"/home/chuby/Dropbox/WorkSpace/CMSISv2p00_LPC17xx/inc" -Os -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/cr_startup_lpc176x.d" -MT"src/cr_startup_lpc176x.d" -o "src/cr_startup_lpc176x.o" "../src/cr_startup_lpc176x.c"
-Finished building: ../src/cr_startup_lpc176x.c
- 
-Building file: ../src/main.c
-Invoking: MCU C Compiler
-arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC17xx -I"/home/chuby/Dropbox/WorkSpace/CMSISv2p00_LPC17xx/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
-Finished building: ../src/main.c
- 
-Building target: LibTest.axf
-Invoking: MCU Linker
-arm-none-eabi-gcc -nostdlib -L"/home/chuby/Dropbox/WorkSpace/CMSISv2p00_LPC17xx/Debug" -Xlinker -Map="LibTest.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "LibTest_Debug.ld" -o "LibTest.axf"  ./src/Drivers/lpc17xx_clkpwr.o ./src/Drivers/lpc17xx_libcfg_default.o ./src/Drivers/lpc17xx_uart.o  ./src/cr_startup_lpc176x.o ./src/main.o   -lCMSISv2p00_LPC17xx
-Finished building target: LibTest.axf
- 
-make --no-print-directory post-build
-Performing post-build steps
-arm-none-eabi-size "LibTest.axf"; # arm-none-eabi-objcopy -O binary "LibTest.axf" "LibTest.bin" ; checksum -p LPC1769 -d "LibTest.bin";
-   text	   data	    bss	    dec	    hex	filename
-   5204	      4	     84	   5292	   14ac	LibTest.axf
- 
+make: Nothing to be done for `all'.

@@ -3,16 +3,7 @@
 	<extension point="org.eclipse.cdt.core.LanguageSettingsProvider">
 		<provider class="org.eclipse.cdt.managedbuilder.language.settings.providers.GCCBuildCommandParser" id="com.crt.advproject.GCCBuildCommandParser" keep-relative-paths="false" name="MCU GCC Build Output Parser" parameter="(arm-none-eabi-gcc)|(arm-none-eabi-[gc]\+\+)|(gcc)|([gc]\+\+)|(clang)" prefer-non-shared="false">
 			<language id="org.eclipse.cdt.core.gcc">
-				<resource project-relative-path="src/hal_cpu.c">
-					<entry kind="includePath" name="/CMSISv2p00_LPC17xx/inc">
-						<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
-					</entry>
-					<entry kind="macro" name="DEBUG" value=""/>
-					<entry kind="macro" name="__CODE_RED" value=""/>
-					<entry kind="macro" name="__REDLIB__" value=""/>
-					<entry kind="macro" name="__USE_CMSIS" value="CMSISv2p00_LPC17xx"/>
-				</resource>
-				<resource project-relative-path="src/att.c">
+				<resource project-relative-path="src/BT_Stack/hci_transport_h4_dma.c">
 					<entry kind="includePath" name="/CMSISv2p00_LPC17xx/inc">
 						<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 					</entry>
@@ -30,6 +21,15 @@
 					<entry kind="macro" name="__REDLIB__" value=""/>
 					<entry kind="macro" name="__USE_CMSIS" value="CMSISv2p00_LPC17xx"/>
 				</resource>
+				<resource project-relative-path="src/BT_Stack/hci_cmds.c">
+					<entry kind="includePath" name="/CMSISv2p00_LPC17xx/inc">
+						<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+					</entry>
+					<entry kind="macro" name="DEBUG" value=""/>
+					<entry kind="macro" name="__CODE_RED" value=""/>
+					<entry kind="macro" name="__REDLIB__" value=""/>
+					<entry kind="macro" name="__USE_CMSIS" value="CMSISv2p00_LPC17xx"/>
+				</resource>
 				<resource project-relative-path="src/l2cap_signaling.c">
 					<entry kind="includePath" name="/CMSISv2p00_LPC17xx/inc">
 						<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
@@ -39,16 +39,7 @@
 					<entry kind="macro" name="__REDLIB__" value=""/>
 					<entry kind="macro" name="__USE_CMSIS" value="CMSISv2p00_LPC17xx"/>
 				</resource>
-				<resource project-relative-path="src/remote_device_db_memory.c">
-					<entry kind="includePath" name="/CMSISv2p00_LPC17xx/inc">
-						<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
-					</entry>
-					<entry kind="macro" name="DEBUG" value=""/>
-					<entry kind="macro" name="__CODE_RED" value=""/>
-					<entry kind="macro" name="__REDLIB__" value=""/>
-					<entry kind="macro" name="__USE_CMSIS" value="CMSISv2p00_LPC17xx"/>
-				</resource>
-				<resource project-relative-path="src/lpc17xx_uart.c">
+				<resource project-relative-path="src/BT_Stack/hci.c">
 					<entry kind="includePath" name="/CMSISv2p00_LPC17xx/inc">
 						<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 					</entry>
@@ -66,7 +57,7 @@
 					<entry kind="macro" name="__REDLIB__" value=""/>
 					<entry kind="macro" name="__USE_CMSIS" value="CMSISv2p00_LPC17xx"/>
 				</resource>
-				<resource project-relative-path="src/linked_list.c">
+				<resource project-relative-path="src/BT_Stack/Drivers/lpc17xx_timer.c">
 					<entry kind="includePath" name="/CMSISv2p00_LPC17xx/inc">
 						<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 					</entry>
@@ -84,7 +75,25 @@
 					<entry kind="macro" name="__REDLIB__" value=""/>
 					<entry kind="macro" name="__USE_CMSIS" value="CMSISv2p00_LPC17xx"/>
 				</resource>
-				<resource project-relative-path="src/hci_dump.c">
+				<resource project-relative-path="src/BT_Stack/l2cap_signaling.c">
+					<entry kind="includePath" name="/CMSISv2p00_LPC17xx/inc">
+						<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+					</entry>
+					<entry kind="macro" name="DEBUG" value=""/>
+					<entry kind="macro" name="__CODE_RED" value=""/>
+					<entry kind="macro" name="__REDLIB__" value=""/>
+					<entry kind="macro" name="__USE_CMSIS" value="CMSISv2p00_LPC17xx"/>
+				</resource>
+				<resource project-relative-path="src/Drivers/lpc17xx_timer.c">
+					<entry kind="includePath" name="/CMSISv2p00_LPC17xx/inc">
+						<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+					</entry>
+					<entry kind="macro" name="DEBUG" value=""/>
+					<entry kind="macro" name="__CODE_RED" value=""/>
+					<entry kind="macro" name="__REDLIB__" value=""/>
+					<entry kind="macro" name="__USE_CMSIS" value="CMSISv2p00_LPC17xx"/>
+				</resource>
+				<resource project-relative-path="src/BT_Stack/hal_cpu.c">
 					<entry kind="includePath" name="/CMSISv2p00_LPC17xx/inc">
 						<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 					</entry>
@@ -102,7 +111,7 @@
 					<entry kind="macro" name="__REDLIB__" value=""/>
 					<entry kind="macro" name="__USE_CMSIS" value="CMSISv2p00_LPC17xx"/>
 				</resource>
-				<resource project-relative-path="src/rfcomm.c">
+				<resource project-relative-path="src/hci_dump.c">
 					<entry kind="includePath" name="/CMSISv2p00_LPC17xx/inc">
 						<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 					</entry>
@@ -120,16 +129,7 @@
 					<entry kind="macro" name="__REDLIB__" value=""/>
 					<entry kind="macro" name="__USE_CMSIS" value="CMSISv2p00_LPC17xx"/>
 				</resource>
-				<resource project-relative-path="src/hci.c">
-					<entry kind="includePath" name="/CMSISv2p00_LPC17xx/inc">
-						<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
-					</entry>
-					<entry kind="macro" name="DEBUG" value=""/>
-					<entry kind="macro" name="__CODE_RED" value=""/>
-					<entry kind="macro" name="__REDLIB__" value=""/>
-					<entry kind="macro" name="__USE_CMSIS" value="CMSISv2p00_LPC17xx"/>
-				</resource>
-				<resource project-relative-path="src/run_loop.c">
+				<resource project-relative-path="src/BT_Stack/linked_list.c">
 					<entry kind="includePath" name="/CMSISv2p00_LPC17xx/inc">
 						<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 					</entry>
@@ -147,25 +147,7 @@
 					<entry kind="macro" name="__REDLIB__" value=""/>
 					<entry kind="macro" name="__USE_CMSIS" value="CMSISv2p00_LPC17xx"/>
 				</resource>
-				<resource project-relative-path="src/Drivers/lpc17xx_libcfg_default.c">
-					<entry kind="includePath" name="/CMSISv2p00_LPC17xx/inc">
-						<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
-					</entry>
-					<entry kind="macro" name="DEBUG" value=""/>
-					<entry kind="macro" name="__CODE_RED" value=""/>
-					<entry kind="macro" name="__REDLIB__" value=""/>
-					<entry kind="macro" name="__USE_CMSIS" value="CMSISv2p00_LPC17xx"/>
-				</resource>
 				<resource project-relative-path="src/btstack_memory.c">
-					<entry kind="includePath" name="/CMSISv2p00_LPC17xx/inc">
-						<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
-					</entry>
-					<entry kind="macro" name="DEBUG" value=""/>
-					<entry kind="macro" name="__CODE_RED" value=""/>
-					<entry kind="macro" name="__REDLIB__" value=""/>
-					<entry kind="macro" name="__USE_CMSIS" value="CMSISv2p00_LPC17xx"/>
-				</resource>
-				<resource project-relative-path="src/cr_startup_lpc176x.c">
 					<entry kind="includePath" name="/CMSISv2p00_LPC17xx/inc">
 						<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 					</entry>
@@ -192,7 +174,7 @@
 					<entry kind="macro" name="__REDLIB__" value=""/>
 					<entry kind="macro" name="__USE_CMSIS" value="CMSISv2p00_LPC17xx"/>
 				</resource>
-				<resource project-relative-path="src/lpc17xx_timer.c">
+				<resource project-relative-path="src/hci_transport_h4_dma.c">
 					<entry kind="includePath" name="/CMSISv2p00_LPC17xx/inc">
 						<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 					</entry>
@@ -201,7 +183,250 @@
 					<entry kind="macro" name="__REDLIB__" value=""/>
 					<entry kind="macro" name="__USE_CMSIS" value="CMSISv2p00_LPC17xx"/>
 				</resource>
-				<resource project-relative-path="src/hci_transport_h4_dma.c">
+				<resource project-relative-path="src/BT_Stack/run_loop.c">
+					<entry kind="includePath" name="/CMSISv2p00_LPC17xx/inc">
+						<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+					</entry>
+					<entry kind="macro" name="DEBUG" value=""/>
+					<entry kind="macro" name="__CODE_RED" value=""/>
+					<entry kind="macro" name="__REDLIB__" value=""/>
+					<entry kind="macro" name="__USE_CMSIS" value="CMSISv2p00_LPC17xx"/>
+				</resource>
+				<resource project-relative-path="src/BT_Stack/sdp_util.c">
+					<entry kind="includePath" name="/CMSISv2p00_LPC17xx/inc">
+						<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+					</entry>
+					<entry kind="macro" name="DEBUG" value=""/>
+					<entry kind="macro" name="__CODE_RED" value=""/>
+					<entry kind="macro" name="__REDLIB__" value=""/>
+					<entry kind="macro" name="__USE_CMSIS" value="CMSISv2p00_LPC17xx"/>
+				</resource>
+				<resource project-relative-path="src/BT_Stack/hci_dump.c">
+					<entry kind="includePath" name="/CMSISv2p00_LPC17xx/inc">
+						<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+					</entry>
+					<entry kind="macro" name="DEBUG" value=""/>
+					<entry kind="macro" name="__CODE_RED" value=""/>
+					<entry kind="macro" name="__REDLIB__" value=""/>
+					<entry kind="macro" name="__USE_CMSIS" value="CMSISv2p00_LPC17xx"/>
+				</resource>
+				<resource project-relative-path="src/BT_Stack/btstack_memory.c">
+					<entry kind="includePath" name="/CMSISv2p00_LPC17xx/inc">
+						<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+					</entry>
+					<entry kind="macro" name="DEBUG" value=""/>
+					<entry kind="macro" name="__CODE_RED" value=""/>
+					<entry kind="macro" name="__REDLIB__" value=""/>
+					<entry kind="macro" name="__USE_CMSIS" value="CMSISv2p00_LPC17xx"/>
+				</resource>
+				<resource project-relative-path="src/utils.c">
+					<entry kind="includePath" name="/CMSISv2p00_LPC17xx/inc">
+						<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+					</entry>
+					<entry kind="macro" name="DEBUG" value=""/>
+					<entry kind="macro" name="__CODE_RED" value=""/>
+					<entry kind="macro" name="__REDLIB__" value=""/>
+					<entry kind="macro" name="__USE_CMSIS" value="CMSISv2p00_LPC17xx"/>
+				</resource>
+				<resource project-relative-path="src/BT_Stack/Drivers/lpc17xx_uart.c">
+					<entry kind="includePath" name="/CMSISv2p00_LPC17xx/inc">
+						<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+					</entry>
+					<entry kind="macro" name="DEBUG" value=""/>
+					<entry kind="macro" name="__CODE_RED" value=""/>
+					<entry kind="macro" name="__REDLIB__" value=""/>
+					<entry kind="macro" name="__USE_CMSIS" value="CMSISv2p00_LPC17xx"/>
+				</resource>
+				<resource project-relative-path="src/Drivers/lpc17xx_clkpwr.c">
+					<entry kind="includePath" name="/CMSISv2p00_LPC17xx/inc">
+						<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+					</entry>
+					<entry kind="macro" name="DEBUG" value=""/>
+					<entry kind="macro" name="__CODE_RED" value=""/>
+					<entry kind="macro" name="__REDLIB__" value=""/>
+					<entry kind="macro" name="__USE_CMSIS" value="CMSISv2p00_LPC17xx"/>
+				</resource>
+				<resource project-relative-path="src/BT_Stack/Drivers/lpc17xx_clkpwr.c">
+					<entry kind="includePath" name="/CMSISv2p00_LPC17xx/inc">
+						<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+					</entry>
+					<entry kind="macro" name="DEBUG" value=""/>
+					<entry kind="macro" name="__CODE_RED" value=""/>
+					<entry kind="macro" name="__REDLIB__" value=""/>
+					<entry kind="macro" name="__USE_CMSIS" value="CMSISv2p00_LPC17xx"/>
+				</resource>
+				<resource project-relative-path="src/BT_Stack/l2cap.c">
+					<entry kind="includePath" name="/CMSISv2p00_LPC17xx/inc">
+						<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+					</entry>
+					<entry kind="macro" name="DEBUG" value=""/>
+					<entry kind="macro" name="__CODE_RED" value=""/>
+					<entry kind="macro" name="__REDLIB__" value=""/>
+					<entry kind="macro" name="__USE_CMSIS" value="CMSISv2p00_LPC17xx"/>
+				</resource>
+				<resource project-relative-path="src/BT_Stack/Drivers/lpc17xx_libcfg_default.c">
+					<entry kind="includePath" name="/CMSISv2p00_LPC17xx/inc">
+						<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+					</entry>
+					<entry kind="macro" name="DEBUG" value=""/>
+					<entry kind="macro" name="__CODE_RED" value=""/>
+					<entry kind="macro" name="__REDLIB__" value=""/>
+					<entry kind="macro" name="__USE_CMSIS" value="CMSISv2p00_LPC17xx"/>
+				</resource>
+				<resource project-relative-path="src/att.c">
+					<entry kind="includePath" name="/CMSISv2p00_LPC17xx/inc">
+						<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+					</entry>
+					<entry kind="macro" name="DEBUG" value=""/>
+					<entry kind="macro" name="__CODE_RED" value=""/>
+					<entry kind="macro" name="__REDLIB__" value=""/>
+					<entry kind="macro" name="__USE_CMSIS" value="CMSISv2p00_LPC17xx"/>
+				</resource>
+				<resource project-relative-path="src/hal_cpu.c">
+					<entry kind="includePath" name="/CMSISv2p00_LPC17xx/inc">
+						<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+					</entry>
+					<entry kind="macro" name="DEBUG" value=""/>
+					<entry kind="macro" name="__CODE_RED" value=""/>
+					<entry kind="macro" name="__REDLIB__" value=""/>
+					<entry kind="macro" name="__USE_CMSIS" value="CMSISv2p00_LPC17xx"/>
+				</resource>
+				<resource project-relative-path="src/BT_Stack/utils.c">
+					<entry kind="includePath" name="/CMSISv2p00_LPC17xx/inc">
+						<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+					</entry>
+					<entry kind="macro" name="DEBUG" value=""/>
+					<entry kind="macro" name="__CODE_RED" value=""/>
+					<entry kind="macro" name="__REDLIB__" value=""/>
+					<entry kind="macro" name="__USE_CMSIS" value="CMSISv2p00_LPC17xx"/>
+				</resource>
+				<resource project-relative-path="src/BT_Stack/att.c">
+					<entry kind="includePath" name="/CMSISv2p00_LPC17xx/inc">
+						<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+					</entry>
+					<entry kind="macro" name="DEBUG" value=""/>
+					<entry kind="macro" name="__CODE_RED" value=""/>
+					<entry kind="macro" name="__REDLIB__" value=""/>
+					<entry kind="macro" name="__USE_CMSIS" value="CMSISv2p00_LPC17xx"/>
+				</resource>
+				<resource project-relative-path="src/remote_device_db_memory.c">
+					<entry kind="includePath" name="/CMSISv2p00_LPC17xx/inc">
+						<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+					</entry>
+					<entry kind="macro" name="DEBUG" value=""/>
+					<entry kind="macro" name="__CODE_RED" value=""/>
+					<entry kind="macro" name="__REDLIB__" value=""/>
+					<entry kind="macro" name="__USE_CMSIS" value="CMSISv2p00_LPC17xx"/>
+				</resource>
+				<resource project-relative-path="src/lpc17xx_uart.c">
+					<entry kind="includePath" name="/CMSISv2p00_LPC17xx/inc">
+						<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+					</entry>
+					<entry kind="macro" name="DEBUG" value=""/>
+					<entry kind="macro" name="__CODE_RED" value=""/>
+					<entry kind="macro" name="__REDLIB__" value=""/>
+					<entry kind="macro" name="__USE_CMSIS" value="CMSISv2p00_LPC17xx"/>
+				</resource>
+				<resource project-relative-path="src/BT_Stack/Drivers/lpc17xx_pinsel.c">
+					<entry kind="includePath" name="/CMSISv2p00_LPC17xx/inc">
+						<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+					</entry>
+					<entry kind="macro" name="DEBUG" value=""/>
+					<entry kind="macro" name="__CODE_RED" value=""/>
+					<entry kind="macro" name="__REDLIB__" value=""/>
+					<entry kind="macro" name="__USE_CMSIS" value="CMSISv2p00_LPC17xx"/>
+				</resource>
+				<resource project-relative-path="src/BT_Stack/hal_uart_dma.c">
+					<entry kind="includePath" name="/CMSISv2p00_LPC17xx/inc">
+						<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+					</entry>
+					<entry kind="macro" name="DEBUG" value=""/>
+					<entry kind="macro" name="__CODE_RED" value=""/>
+					<entry kind="macro" name="__REDLIB__" value=""/>
+					<entry kind="macro" name="__USE_CMSIS" value="CMSISv2p00_LPC17xx"/>
+				</resource>
+				<resource project-relative-path="src/linked_list.c">
+					<entry kind="includePath" name="/CMSISv2p00_LPC17xx/inc">
+						<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+					</entry>
+					<entry kind="macro" name="DEBUG" value=""/>
+					<entry kind="macro" name="__CODE_RED" value=""/>
+					<entry kind="macro" name="__REDLIB__" value=""/>
+					<entry kind="macro" name="__USE_CMSIS" value="CMSISv2p00_LPC17xx"/>
+				</resource>
+				<resource project-relative-path="src/Drivers/lpc17xx_pinsel.c">
+					<entry kind="includePath" name="/CMSISv2p00_LPC17xx/inc">
+						<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+					</entry>
+					<entry kind="macro" name="DEBUG" value=""/>
+					<entry kind="macro" name="__CODE_RED" value=""/>
+					<entry kind="macro" name="__REDLIB__" value=""/>
+					<entry kind="macro" name="__USE_CMSIS" value="CMSISv2p00_LPC17xx"/>
+				</resource>
+				<resource project-relative-path="src/rfcomm.c">
+					<entry kind="includePath" name="/CMSISv2p00_LPC17xx/inc">
+						<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+					</entry>
+					<entry kind="macro" name="DEBUG" value=""/>
+					<entry kind="macro" name="__CODE_RED" value=""/>
+					<entry kind="macro" name="__REDLIB__" value=""/>
+					<entry kind="macro" name="__USE_CMSIS" value="CMSISv2p00_LPC17xx"/>
+				</resource>
+				<resource project-relative-path="src/BT_Stack/remote_device_db_memory.c">
+					<entry kind="includePath" name="/CMSISv2p00_LPC17xx/inc">
+						<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+					</entry>
+					<entry kind="macro" name="DEBUG" value=""/>
+					<entry kind="macro" name="__CODE_RED" value=""/>
+					<entry kind="macro" name="__REDLIB__" value=""/>
+					<entry kind="macro" name="__USE_CMSIS" value="CMSISv2p00_LPC17xx"/>
+				</resource>
+				<resource project-relative-path="src/hci.c">
+					<entry kind="includePath" name="/CMSISv2p00_LPC17xx/inc">
+						<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+					</entry>
+					<entry kind="macro" name="DEBUG" value=""/>
+					<entry kind="macro" name="__CODE_RED" value=""/>
+					<entry kind="macro" name="__REDLIB__" value=""/>
+					<entry kind="macro" name="__USE_CMSIS" value="CMSISv2p00_LPC17xx"/>
+				</resource>
+				<resource project-relative-path="src/run_loop.c">
+					<entry kind="includePath" name="/CMSISv2p00_LPC17xx/inc">
+						<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+					</entry>
+					<entry kind="macro" name="DEBUG" value=""/>
+					<entry kind="macro" name="__CODE_RED" value=""/>
+					<entry kind="macro" name="__REDLIB__" value=""/>
+					<entry kind="macro" name="__USE_CMSIS" value="CMSISv2p00_LPC17xx"/>
+				</resource>
+				<resource project-relative-path="src/BT_Stack/hal_tick.c">
+					<entry kind="includePath" name="/CMSISv2p00_LPC17xx/inc">
+						<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+					</entry>
+					<entry kind="macro" name="DEBUG" value=""/>
+					<entry kind="macro" name="__CODE_RED" value=""/>
+					<entry kind="macro" name="__REDLIB__" value=""/>
+					<entry kind="macro" name="__USE_CMSIS" value="CMSISv2p00_LPC17xx"/>
+				</resource>
+				<resource project-relative-path="src/Drivers/lpc17xx_libcfg_default.c">
+					<entry kind="includePath" name="/CMSISv2p00_LPC17xx/inc">
+						<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+					</entry>
+					<entry kind="macro" name="DEBUG" value=""/>
+					<entry kind="macro" name="__CODE_RED" value=""/>
+					<entry kind="macro" name="__REDLIB__" value=""/>
+					<entry kind="macro" name="__USE_CMSIS" value="CMSISv2p00_LPC17xx"/>
+				</resource>
+				<resource project-relative-path="src/cr_startup_lpc176x.c">
+					<entry kind="includePath" name="/CMSISv2p00_LPC17xx/inc">
+						<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+					</entry>
+					<entry kind="macro" name="DEBUG" value=""/>
+					<entry kind="macro" name="__CODE_RED" value=""/>
+					<entry kind="macro" name="__REDLIB__" value=""/>
+					<entry kind="macro" name="__USE_CMSIS" value="CMSISv2p00_LPC17xx"/>
+				</resource>
+				<resource project-relative-path="src/lpc17xx_timer.c">
 					<entry kind="includePath" name="/CMSISv2p00_LPC17xx/inc">
 						<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 					</entry>
@@ -228,7 +453,7 @@
 					<entry kind="macro" name="__REDLIB__" value=""/>
 					<entry kind="macro" name="__USE_CMSIS" value="CMSISv2p00_LPC17xx"/>
 				</resource>
-				<resource project-relative-path="src/utils.c">
+				<resource project-relative-path="src/BT_Stack/memory_pool.c">
 					<entry kind="includePath" name="/CMSISv2p00_LPC17xx/inc">
 						<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 					</entry>
@@ -246,7 +471,7 @@
 					<entry kind="macro" name="__REDLIB__" value=""/>
 					<entry kind="macro" name="__USE_CMSIS" value="CMSISv2p00_LPC17xx"/>
 				</resource>
-				<resource project-relative-path="src/Drivers/lpc17xx_clkpwr.c">
+				<resource project-relative-path="src/memory_pool.c">
 					<entry kind="includePath" name="/CMSISv2p00_LPC17xx/inc">
 						<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 					</entry>
@@ -255,7 +480,16 @@
 					<entry kind="macro" name="__REDLIB__" value=""/>
 					<entry kind="macro" name="__USE_CMSIS" value="CMSISv2p00_LPC17xx"/>
 				</resource>
-				<resource project-relative-path="src/memory_pool.c">
+				<resource project-relative-path="src/BT_Stack/rfcomm.c">
+					<entry kind="includePath" name="/CMSISv2p00_LPC17xx/inc">
+						<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+					</entry>
+					<entry kind="macro" name="DEBUG" value=""/>
+					<entry kind="macro" name="__CODE_RED" value=""/>
+					<entry kind="macro" name="__REDLIB__" value=""/>
+					<entry kind="macro" name="__USE_CMSIS" value="CMSISv2p00_LPC17xx"/>
+				</resource>
+				<resource project-relative-path="src/BT_Stack/run_loop_embedded.c">
 					<entry kind="includePath" name="/CMSISv2p00_LPC17xx/inc">
 						<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 					</entry>

@@ -17,16 +17,13 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "config.h"
-
-
-#include "btstack_memory.h"
-#include "hci.h"
-#include "hci_dump.h"
-#include "run_loop.h"
-#include "l2cap.h"
-
-#include "att.h"
+#include "BT_Stack/includes/config.h"
+#include "BT_Stack/includes/btstack_memory.h"
+#include "BT_Stack/includes/hci.h"
+#include "BT_Stack/includes/hci_dump.h"
+#include "BT_Stack/includes/run_loop.h"
+#include "BT_Stack/includes/l2cap.h"
+#include "BT_Stack/includes/att.h"
 
 #include <cr_section_macros.h>
 #include <NXP/crp.h>
