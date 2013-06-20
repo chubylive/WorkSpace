@@ -14,7 +14,7 @@
 
 #include <cr_section_macros.h>
 #include <NXP/crp.h>
-#include "lpc17xx_uart.h"
+#include "Drivers/lpc17xx_uart.h"
 
 // Variable to store CRP value in. Will be placed automatically
 // by the linker when "Enable Code Read Protect" selected.

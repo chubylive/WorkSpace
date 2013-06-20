@@ -8,6 +8,7 @@ RM := rm -rf
 
 # All of the sources participating in the build are defined here
 -include sources.mk
+-include src/Drivers/subdir.mk
 -include src/subdir.mk
 -include subdir.mk
 -include objects.mk
@@ -29,7 +30,7 @@ all: LibTest.axf
 LibTest.axf: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: MCU Linker'
-	arm-none-eabi-gcc -nostdlib -L"/home/chuby/Dropbox/WorkSpace/lpc1769/CMSISv2p00_LPC17xx/Debug" -Xlinker -Map="LibTest.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "LibTest_Debug.ld" -o "LibTest.axf" $(OBJS) $(USER_OBJS) $(LIBS)
+	arm-none-eabi-gcc -nostdlib -L"/home/chuby/Dropbox/WorkSpace/CMSISv2p00_LPC17xx/Debug" -Xlinker -Map="LibTest.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "LibTest_Debug.ld" -o "LibTest.axf" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 	$(MAKE) --no-print-directory post-build
