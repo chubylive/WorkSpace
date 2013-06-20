@@ -1,0 +1,475 @@
+Archive member included because of file (symbol)
+
+/home/chuby/Dropbox/WorkSpace/lpc1769/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+                              ./src/cr_startup_lpc176x.o (SystemInit)
+/usr/local/lpcxpresso_5.0.14_1063/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m/libcr_c.a(__weak__main.o)
+                              ./src/cr_startup_lpc176x.o (__main)
+/usr/local/lpcxpresso_5.0.14_1063/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv7-m/libcr_eabihelpers.a(division.o)
+                              /home/chuby/Dropbox/WorkSpace/lpc1769/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a(system_LPC17xx.o) (__aeabi_uldivmod)
+
+Allocating common symbols
+Common symbol       size              file
+
+UART1Buffer         0x40              ./src/main.o
+UART1Status         0x4               ./src/main.o
+
+Discarded input sections
+
+ .text          0x00000000        0x0 ./src/cr_startup_lpc176x.o
+ .data          0x00000000        0x0 ./src/cr_startup_lpc176x.o
+ .bss           0x00000000        0x0 ./src/cr_startup_lpc176x.o
+ .text          0x00000000        0x0 ./src/lpc17xx_clkpwr.o
+ .data          0x00000000        0x0 ./src/lpc17xx_clkpwr.o
+ .bss           0x00000000        0x0 ./src/lpc17xx_clkpwr.o
+ .text.CLKPWR_SetPCLKDiv
+                0x00000000       0xcc ./src/lpc17xx_clkpwr.o
+ .text.CLKPWR_Sleep
+                0x00000000       0x1c ./src/lpc17xx_clkpwr.o
+ .text.CLKPWR_DeepSleep
+                0x00000000       0x2c ./src/lpc17xx_clkpwr.o
+ .text.CLKPWR_PowerDown
+                0x00000000       0x2c ./src/lpc17xx_clkpwr.o
+ .text.CLKPWR_DeepPowerDown
+                0x00000000       0x2c ./src/lpc17xx_clkpwr.o
+ .text          0x00000000        0x0 ./src/lpc17xx_libcfg_default.o
+ .data          0x00000000        0x0 ./src/lpc17xx_libcfg_default.o
+ .bss           0x00000000        0x0 ./src/lpc17xx_libcfg_default.o
+ .text          0x00000000        0x0 ./src/lpc17xx_uart.o
+ .data          0x00000000        0x0 ./src/lpc17xx_uart.o
+ .bss           0x00000000        0x0 ./src/lpc17xx_uart.o
+ .text.UART_DeInit
+                0x00000000       0xcc ./src/lpc17xx_uart.o
+ .text.UART_ConfigStructInit
+                0x00000000       0x34 ./src/lpc17xx_uart.o
+ .text.UART_Receive
+                0x00000000       0xd8 ./src/lpc17xx_uart.o
+ .text.UART_ForceBreak
+                0x00000000       0x88 ./src/lpc17xx_uart.o
+ .text.UART_GetLineStatus
+                0x00000000       0x7c ./src/lpc17xx_uart.o
+ .text.UART_GetIntId
+                0x00000000       0x68 ./src/lpc17xx_uart.o
+ .text.UART_CheckBusy
+                0x00000000       0x2c ./src/lpc17xx_uart.o
+ .text.UART_ABCmd
+                0x00000000      0x15c ./src/lpc17xx_uart.o
+ .text.UART_ABClearIntPending
+                0x00000000       0x88 ./src/lpc17xx_uart.o
+ .text.UART_IrDAInvtInputCmd
+                0x00000000       0x84 ./src/lpc17xx_uart.o
+ .text.UART_IrDACmd
+                0x00000000       0x80 ./src/lpc17xx_uart.o
+ .text.UART_IrDAPulseDivConfig
+                0x00000000       0xa8 ./src/lpc17xx_uart.o
+ .text.UART_FullModemForcePinState
+                0x00000000       0xcc ./src/lpc17xx_uart.o
+ .text.UART_FullModemConfigMode
+                0x00000000       0xdc ./src/lpc17xx_uart.o
+ .text.UART_FullModemGetStatus
+                0x00000000       0x38 ./src/lpc17xx_uart.o
+ .text.UART_RS485Config
+                0x00000000      0x1bc ./src/lpc17xx_uart.o
+ .text.UART_RS485ReceiverCmd
+                0x00000000       0x48 ./src/lpc17xx_uart.o
+ .text.UART_RS485Send
+                0x00000000       0x84 ./src/lpc17xx_uart.o
+ .text.UART_RS485SendSlvAddr
+                0x00000000       0x28 ./src/lpc17xx_uart.o
+ .text.UART_RS485SendData
+                0x00000000       0x28 ./src/lpc17xx_uart.o
+ .text          0x00000000        0x0 ./src/main.o
+ .data          0x00000000        0x0 ./src/main.o
+ .bss           0x00000000        0x0 ./src/main.o
+ .data.UART1TxEmpty
+                0x00000000        0x1 ./src/main.o
+ .data.test     0x00000000        0x8 ./src/main.o
+ .text.UART1_Send
+                0x00000000       0x60 ./src/main.o
+ .text          0x00000000        0x0 /home/chuby/Dropbox/WorkSpace/lpc1769/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .data          0x00000000        0x0 /home/chuby/Dropbox/WorkSpace/lpc1769/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .bss           0x00000000        0x0 /home/chuby/Dropbox/WorkSpace/lpc1769/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .text.SystemCoreClockUpdate
+                0x00000000       0xcc /home/chuby/Dropbox/WorkSpace/lpc1769/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .text          0x00000000        0x0 /usr/local/lpcxpresso_5.0.14_1063/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m/libcr_c.a(__weak__main.o)
+ .data          0x00000000        0x0 /usr/local/lpcxpresso_5.0.14_1063/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m/libcr_c.a(__weak__main.o)
+ .bss           0x00000000        0x0 /usr/local/lpcxpresso_5.0.14_1063/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m/libcr_c.a(__weak__main.o)
+ .text          0x00000000        0x0 /usr/local/lpcxpresso_5.0.14_1063/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv7-m/libcr_eabihelpers.a(division.o)
+ .data          0x00000000        0x0 /usr/local/lpcxpresso_5.0.14_1063/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv7-m/libcr_eabihelpers.a(division.o)
+ .bss           0x00000000        0x0 /usr/local/lpcxpresso_5.0.14_1063/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv7-m/libcr_eabihelpers.a(division.o)
+ .text.__aeabi_division_idiv
+                0x00000000       0x10 /usr/local/lpcxpresso_5.0.14_1063/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv7-m/libcr_eabihelpers.a(division.o)
+ .text.__aeabi_division_idivmod
+                0x00000000       0x16 /usr/local/lpcxpresso_5.0.14_1063/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv7-m/libcr_eabihelpers.a(division.o)
+ .text.__aeabi_division_uidiv
+                0x00000000       0x10 /usr/local/lpcxpresso_5.0.14_1063/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv7-m/libcr_eabihelpers.a(division.o)
+ .text.__aeabi_division_uidivmod
+                0x00000000       0x16 /usr/local/lpcxpresso_5.0.14_1063/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv7-m/libcr_eabihelpers.a(division.o)
+ .text.__aeabi_division_ldivmod
+                0x00000000       0x26 /usr/local/lpcxpresso_5.0.14_1063/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv7-m/libcr_eabihelpers.a(division.o)
+ .text.__aeabi_division_uldivmod
+                0x00000000      0x174 /usr/local/lpcxpresso_5.0.14_1063/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv7-m/libcr_eabihelpers.a(division.o)
+ .text.__aeabi_division_idiv0
+                0x00000000        0x2 /usr/local/lpcxpresso_5.0.14_1063/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv7-m/libcr_eabihelpers.a(division.o)
+ .text.__aeabi_division_ldiv0
+                0x00000000        0x2 /usr/local/lpcxpresso_5.0.14_1063/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv7-m/libcr_eabihelpers.a(division.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+MFlash512        0x00000000         0x00080000         xr
+RamLoc32         0x10000000         0x00008000         xrw
+RamAHB32         0x2007c000         0x00008000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD ./src/cr_startup_lpc176x.o
+LOAD ./src/lpc17xx_clkpwr.o
+LOAD ./src/lpc17xx_libcfg_default.o
+LOAD ./src/lpc17xx_uart.o
+LOAD ./src/main.o
+LOAD /home/chuby/Dropbox/WorkSpace/lpc1769/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a
+START GROUP
+LOAD /usr/local/lpcxpresso_5.0.14_1063/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m/libcr_c.a
+LOAD /usr/local/lpcxpresso_5.0.14_1063/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv7-m/libcr_eabihelpers.a
+END GROUP
+                0x00080000                __top_MFlash512 = 0x80000
+                0x10008000                __top_RamLoc32 = 0x10008000
+                0x20084000                __top_RamAHB32 = 0x20084000
+
+.text           0x00000000     0x144c
+ FILL mask 0xff
+ *(.isr_vector)
+ .isr_vector    0x00000000       0xcc ./src/cr_startup_lpc176x.o
+                0x00000000                g_pfnVectors
+                0x000000cc                . = ALIGN (0x4)
+                0x000000cc                __section_table_start = .
+                0x000000cc                __data_section_table = .
+                0x000000cc        0x4 LONG 0x144c LOADADDR (.data)
+                0x000000d0        0x4 LONG 0x10000000 ADDR (.data)
+                0x000000d4        0x4 LONG 0x4 SIZEOF (.data)
+                0x000000d8        0x4 LONG 0x144c LOADADDR (.data_RAM2)
+                0x000000dc        0x4 LONG 0x2007c000 ADDR (.data_RAM2)
+                0x000000e0        0x4 LONG 0x0 SIZEOF (.data_RAM2)
+                0x000000e4                __data_section_table_end = .
+                0x000000e4                __bss_section_table = .
+                0x000000e4        0x4 LONG 0x10000004 ADDR (.bss)
+                0x000000e8        0x4 LONG 0x54 SIZEOF (.bss)
+                0x000000ec        0x4 LONG 0x2007c000 ADDR (.bss_RAM2)
+                0x000000f0        0x4 LONG 0x0 SIZEOF (.bss_RAM2)
+                0x000000f4                __bss_section_table_end = .
+                0x000000f4                __section_table_end = .
+ *(.after_vectors*)
+ .after_vectors
+                0x000000f4       0x78 ./src/cr_startup_lpc176x.o
+                0x000000f4                NMI_Handler
+                0x000000f6                HardFault_Handler
+                0x000000f8                MemManage_Handler
+                0x000000fa                BusFault_Handler
+                0x000000fc                UsageFault_Handler
+                0x000000fe                SVC_Handler
+                0x00000100                DebugMon_Handler
+                0x00000102                PendSV_Handler
+                0x00000104                SysTick_Handler
+                0x00000106                data_init
+                0x00000118                bss_init
+                0x00000128                ResetISR
+                0x00000168                TIMER2_IRQHandler
+                0x00000168                RIT_IRQHandler
+                0x00000168                I2C0_IRQHandler
+                0x00000168                USBActivity_IRQHandler
+                0x00000168                PWM1_IRQHandler
+                0x00000168                I2C1_IRQHandler
+                0x00000168                EINT2_IRQHandler
+                0x00000168                EINT3_IRQHandler
+                0x00000168                CANActivity_IRQHandler
+                0x00000168                TIMER3_IRQHandler
+                0x00000168                UART0_IRQHandler
+                0x00000168                IntDefaultHandler
+                0x00000168                PLL0_IRQHandler
+                0x00000168                CAN_IRQHandler
+                0x00000168                PLL1_IRQHandler
+                0x00000168                SSP0_IRQHandler
+                0x00000168                I2S_IRQHandler
+                0x00000168                I2C2_IRQHandler
+                0x00000168                RTC_IRQHandler
+                0x00000168                TIMER0_IRQHandler
+                0x00000168                SPI_IRQHandler
+                0x00000168                EINT1_IRQHandler
+                0x00000168                TIMER1_IRQHandler
+                0x00000168                UART2_IRQHandler
+                0x00000168                ADC_IRQHandler
+                0x00000168                SSP1_IRQHandler
+                0x00000168                USB_IRQHandler
+                0x00000168                BOD_IRQHandler
+                0x00000168                WDT_IRQHandler
+                0x00000168                QEI_IRQHandler
+                0x00000168                EINT0_IRQHandler
+                0x00000168                DMA_IRQHandler
+                0x00000168                UART3_IRQHandler
+                0x00000168                MCPWM_IRQHandler
+                0x00000168                ENET_IRQHandler
+                0x000002fc                . = 0x2fc
+ *fill*         0x0000016c      0x190 ff
+                0x000002fc                PROVIDE (__CRP_WORD_START__, .)
+ *(.crp)
+ .crp           0x000002fc        0x4 ./src/main.o
+                0x000002fc                CRP_WORD
+                0x00000300                PROVIDE (__CRP_WORD_END__, .)
+                0x00000001                ASSERT (! ((__CRP_WORD_START__ == __CRP_WORD_END__)), Linker CRP Enabled, but no CRP_WORD provided within application)
+ *(.text*)
+ .text.CLKPWR_GetPCLKSEL
+                0x00000300       0x54 ./src/lpc17xx_clkpwr.o
+                0x00000300                CLKPWR_GetPCLKSEL
+ .text.CLKPWR_GetPCLK
+                0x00000354       0x74 ./src/lpc17xx_clkpwr.o
+                0x00000354                CLKPWR_GetPCLK
+ .text.CLKPWR_ConfigPPWR
+                0x000003c8       0x78 ./src/lpc17xx_clkpwr.o
+                0x000003c8                CLKPWR_ConfigPPWR
+ .text.check_failed
+                0x00000440        0xc ./src/lpc17xx_libcfg_default.o
+                0x00000440                check_failed
+ .text.uart_set_divisors
+                0x0000044c      0x26c ./src/lpc17xx_uart.o
+ .text.UART_Init
+                0x000006b8      0x398 ./src/lpc17xx_uart.o
+                0x000006b8                UART_Init
+ .text.UART_SendByte
+                0x00000a50       0x78 ./src/lpc17xx_uart.o
+                0x00000a50                UART_SendByte
+ .text.UART_ReceiveByte
+                0x00000ac8       0x78 ./src/lpc17xx_uart.o
+                0x00000ac8                UART_ReceiveByte
+ .text.UART_Send
+                0x00000b40      0x10c ./src/lpc17xx_uart.o
+                0x00000b40                UART_Send
+ .text.UART_IntConfig
+                0x00000c4c      0x1d0 ./src/lpc17xx_uart.o
+                0x00000c4c                UART_IntConfig
+ .text.UART_FIFOConfig
+                0x00000e1c      0x184 ./src/lpc17xx_uart.o
+                0x00000e1c                UART_FIFOConfig
+ .text.UART_FIFOConfigStructInit
+                0x00000fa0       0x34 ./src/lpc17xx_uart.o
+                0x00000fa0                UART_FIFOConfigStructInit
+ .text.UART_TxCmd
+                0x00000fd4       0xe8 ./src/lpc17xx_uart.o
+                0x00000fd4                UART_TxCmd
+ .text.NVIC_EnableIRQ
+                0x000010bc       0x38 ./src/main.o
+ .text.UART1_IRQHandler
+                0x000010f4      0x14c ./src/main.o
+                0x000010f4                UART1_IRQHandler
+ .text.main     0x00001240      0x10c ./src/main.o
+                0x00001240                main
+ .text.SystemInit
+                0x0000134c       0xe4 /home/chuby/Dropbox/WorkSpace/lpc1769/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+                0x0000134c                SystemInit
+ .text.__weak_main
+                0x00001430        0x4 /usr/local/lpcxpresso_5.0.14_1063/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m/libcr_c.a(__weak__main.o)
+                0x00001430                __main
+                0x00001430                __weak_main
+ *(.rodata .rodata.*)
+ .rodata        0x00001434       0x18 ./src/lpc17xx_uart.o
+                0x0000144c                . = ALIGN (0x4)
+
+.glue_7         0x0000144c        0x0
+ .glue_7        0x00000000        0x0 linker stubs
+
+.glue_7t        0x0000144c        0x0
+ .glue_7t       0x00000000        0x0 linker stubs
+
+.vfp11_veneer   0x0000144c        0x0
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+
+.v4_bx          0x0000144c        0x0
+ .v4_bx         0x00000000        0x0 linker stubs
+
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+                0x0000144c                __exidx_start = .
+
+.ARM.exidx
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+                0x0000144c                __exidx_end = .
+                0x0000144c                _etext = .
+
+.data_RAM2      0x2007c000        0x0 load address 0x0000144c
+ FILL mask 0xff
+ *(.data.$RAM2*)
+ *(.data.$RamAHB32*)
+                0x2007c000                . = ALIGN (0x4)
+
+.uninit_RESERVED
+                0x10000000        0x0
+ *(.bss.$RESERVED*)
+                0x10000000                . = ALIGN (0x4)
+                0x10000000                _end_uninit_RESERVED = .
+
+.data           0x10000000        0x4 load address 0x0000144c
+ FILL mask 0xff
+                0x10000000                _data = .
+ *(vtable)
+ *(.data*)
+ .data.SystemCoreClock
+                0x10000000        0x4 /home/chuby/Dropbox/WorkSpace/lpc1769/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+                0x10000000                SystemCoreClock
+                0x10000004                . = ALIGN (0x4)
+                0x10000004                _edata = .
+
+.bss_RAM2       0x2007c000        0x0
+ *(.bss.$RAM2*)
+ *(.bss.$RamAHB32*)
+                0x2007c000                . = ALIGN (0x4)
+
+.bss            0x10000004       0x54
+                0x10000004                _bss = .
+ *(.bss*)
+ .bss.UART1Count
+                0x10000004        0x4 ./src/main.o
+                0x10000004                UART1Count
+ .bss.UART_CFG_1152
+                0x10000008        0x8 ./src/main.o
+ .bss.FIFO_DEFAULT
+                0x10000010        0x4 ./src/main.o
+ *(COMMON)
+ COMMON         0x10000014       0x44 ./src/main.o
+                0x10000014                UART1Buffer
+                0x10000054                UART1Status
+                0x10000058                . = ALIGN (0x4)
+                0x10000058                _ebss = .
+                0x10000058                PROVIDE (end, .)
+
+.noinit_RAM2    0x2007c000        0x0
+ *(.noinit.$RAM2*)
+ *(.noinit.$RamAHB32*)
+                0x2007c000                . = ALIGN (0x4)
+
+.noinit         0x10000058        0x0
+                0x10000058                _noinit = .
+ *(.noinit*)
+                0x10000058                . = ALIGN (0x4)
+                0x10000058                _end_noinit = .
+                0x10000058                PROVIDE (_pvHeapStart, .)
+                0x10008000                PROVIDE (_vStackTop, (__top_RamLoc32 - 0x0))
+OUTPUT(LibTest.axf elf32-littlearm)
+
+.debug_info     0x00000000     0x2cef
+ .debug_info    0x00000000      0x2dd ./src/cr_startup_lpc176x.o
+ .debug_info    0x000002dd      0x6d7 ./src/lpc17xx_clkpwr.o
+ .debug_info    0x000009b4       0xcd ./src/lpc17xx_libcfg_default.o
+ .debug_info    0x00000a81     0x147b ./src/lpc17xx_uart.o
+ .debug_info    0x00001efc      0xa64 ./src/main.o
+ .debug_info    0x00002960      0x38f /home/chuby/Dropbox/WorkSpace/lpc1769/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+
+.debug_abbrev   0x00000000      0x7d0
+ .debug_abbrev  0x00000000      0x12b ./src/cr_startup_lpc176x.o
+ .debug_abbrev  0x0000012b      0x197 ./src/lpc17xx_clkpwr.o
+ .debug_abbrev  0x000002c2       0x6a ./src/lpc17xx_libcfg_default.o
+ .debug_abbrev  0x0000032c      0x1ec ./src/lpc17xx_uart.o
+ .debug_abbrev  0x00000518      0x1d5 ./src/main.o
+ .debug_abbrev  0x000006ed       0xe3 /home/chuby/Dropbox/WorkSpace/lpc1769/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+
+.debug_loc      0x00000000      0xa18
+ .debug_loc     0x00000000      0x102 ./src/cr_startup_lpc176x.o
+ .debug_loc     0x00000102      0x190 ./src/lpc17xx_clkpwr.o
+ .debug_loc     0x00000292       0x38 ./src/lpc17xx_libcfg_default.o
+ .debug_loc     0x000002ca      0x65a ./src/lpc17xx_uart.o
+ .debug_loc     0x00000924       0xd4 ./src/main.o
+ .debug_loc     0x000009f8       0x20 /home/chuby/Dropbox/WorkSpace/lpc1769/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+
+.debug_aranges  0x00000000      0x258
+ .debug_aranges
+                0x00000000       0x80 ./src/cr_startup_lpc176x.o
+ .debug_aranges
+                0x00000080       0x58 ./src/lpc17xx_clkpwr.o
+ .debug_aranges
+                0x000000d8       0x20 ./src/lpc17xx_libcfg_default.o
+ .debug_aranges
+                0x000000f8      0x100 ./src/lpc17xx_uart.o
+ .debug_aranges
+                0x000001f8       0x38 ./src/main.o
+ .debug_aranges
+                0x00000230       0x28 /home/chuby/Dropbox/WorkSpace/lpc1769/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+
+.debug_ranges   0x00000000      0x1f8
+ .debug_ranges  0x00000000       0x70 ./src/cr_startup_lpc176x.o
+ .debug_ranges  0x00000070       0x48 ./src/lpc17xx_clkpwr.o
+ .debug_ranges  0x000000b8       0x10 ./src/lpc17xx_libcfg_default.o
+ .debug_ranges  0x000000c8       0xf0 ./src/lpc17xx_uart.o
+ .debug_ranges  0x000001b8       0x28 ./src/main.o
+ .debug_ranges  0x000001e0       0x18 /home/chuby/Dropbox/WorkSpace/lpc1769/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+
+.debug_line     0x00000000     0x1ff0
+ .debug_line    0x00000000      0x3e2 ./src/cr_startup_lpc176x.o
+ .debug_line    0x000003e2      0x4c2 ./src/lpc17xx_clkpwr.o
+ .debug_line    0x000008a4      0x363 ./src/lpc17xx_libcfg_default.o
+ .debug_line    0x00000c07      0xaf5 ./src/lpc17xx_uart.o
+ .debug_line    0x000016fc      0x4ea ./src/main.o
+ .debug_line    0x00001be6      0x40a /home/chuby/Dropbox/WorkSpace/lpc1769/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+
+.debug_macinfo  0x00000000    0x2ebd0
+ .debug_macinfo
+                0x00000000     0x3d45 ./src/cr_startup_lpc176x.o
+ .debug_macinfo
+                0x00003d45     0x9737 ./src/lpc17xx_clkpwr.o
+ .debug_macinfo
+                0x0000d47c     0x401b ./src/lpc17xx_libcfg_default.o
+ .debug_macinfo
+                0x00011497     0xb190 ./src/lpc17xx_uart.o
+ .debug_macinfo
+                0x0001c627     0xa078 ./src/main.o
+ .debug_macinfo
+                0x0002669f     0x8531 /home/chuby/Dropbox/WorkSpace/lpc1769/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+
+.debug_str      0x00000000     0x135f
+ .debug_str     0x00000000      0x24b ./src/cr_startup_lpc176x.o
+                                0x273 (size before relaxing)
+ .debug_str     0x0000024b      0x2b9 ./src/lpc17xx_clkpwr.o
+                                0x3bc (size before relaxing)
+ .debug_str     0x00000504       0x37 ./src/lpc17xx_libcfg_default.o
+                                0x143 (size before relaxing)
+ .debug_str     0x0000053b      0xac0 ./src/lpc17xx_uart.o
+                                0xc8c (size before relaxing)
+ .debug_str     0x00000ffb      0x2ec ./src/main.o
+                                0x739 (size before relaxing)
+ .debug_str     0x000012e7       0x78 /home/chuby/Dropbox/WorkSpace/lpc1769/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+                                0x2b2 (size before relaxing)
+
+.comment        0x00000000       0x70
+ .comment       0x00000000       0x70 ./src/cr_startup_lpc176x.o
+                                 0x71 (size before relaxing)
+ .comment       0x00000000       0x71 ./src/lpc17xx_clkpwr.o
+ .comment       0x00000000       0x71 ./src/lpc17xx_libcfg_default.o
+ .comment       0x00000000       0x71 ./src/lpc17xx_uart.o
+ .comment       0x00000000       0x71 ./src/main.o
+ .comment       0x00000000       0x71 /home/chuby/Dropbox/WorkSpace/lpc1769/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .comment       0x00000000       0x71 /usr/local/lpcxpresso_5.0.14_1063/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m/libcr_c.a(__weak__main.o)
+
+.ARM.attributes
+                0x00000000       0x31
+ .ARM.attributes
+                0x00000000       0x33 ./src/cr_startup_lpc176x.o
+ .ARM.attributes
+                0x00000033       0x33 ./src/lpc17xx_clkpwr.o
+ .ARM.attributes
+                0x00000066       0x33 ./src/lpc17xx_libcfg_default.o
+ .ARM.attributes
+                0x00000099       0x33 ./src/lpc17xx_uart.o
+ .ARM.attributes
+                0x000000cc       0x33 ./src/main.o
+ .ARM.attributes
+                0x000000ff       0x33 /home/chuby/Dropbox/WorkSpace/lpc1769/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .ARM.attributes
+                0x00000132       0x33 /usr/local/lpcxpresso_5.0.14_1063/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv7-m/libcr_c.a(__weak__main.o)
+ .ARM.attributes
+                0x00000165       0x21 /usr/local/lpcxpresso_5.0.14_1063/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv7-m/libcr_eabihelpers.a(division.o)
+
+.debug_frame    0x00000000      0x664
+ .debug_frame   0x00000000       0xf4 ./src/cr_startup_lpc176x.o
+ .debug_frame   0x000000f4       0xe4 ./src/lpc17xx_clkpwr.o
+ .debug_frame   0x000001d8       0x2c ./src/lpc17xx_libcfg_default.o
+ .debug_frame   0x00000204      0x3a0 ./src/lpc17xx_uart.o
+ .debug_frame   0x000005a4       0x84 ./src/main.o
+ .debug_frame   0x00000628       0x3c /home/chuby/Dropbox/WorkSpace/lpc1769/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
