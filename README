@@ -1,1 +1,31 @@
-hello 
+this workspace contains a running uart example based on the liblpc LPC1769 library.
+It also contains a LPC1769 port of BTStack.
+  
+  I have run into an issue with the port. The program is able send a couple HCI command and receive and acknowledgement packet
+  for the CC2540. However when i try to send the set avertisment command i dont get a response from the CC2540. 
+  
+  reason why we think this is happening include:
+  unimplented CTS handler:
+    the uart communication between the LPC and the bluetooth module uses the CTS/RTS lines for control flow. In other words 
+    the RTS tell the CC2540 that is should send data and CTS comming from the CC2540 tells the LPC that is can send data. 
+    In port example for the MSP430 type MCU they included a IRQ handler and A CTS setup. I did not implement this because on 
+    the LPC CTS is handle differently.
+    
+  Incorrect intialization of the HCI (FIXED):
+     Before the issue was resolved, the Printf in the code segment 
+                case BTSTACK_EVENT_STATE:
+          		// bt stack activated, get started - set local name
+        			if (packet[2] == HCI_STATE_WORKING) {
+        				printf("Working!\n");
+        				HCI_WORKING = 1;
+        				hci_send_cmd(&hci_read_local_supported_features);
+        			}
+        			break;
+              
+      never ran. The reason why the problem arose was becasue of the way the packet handler in the main file was setup.
+      While the HCI init was running and sending commands the receive packet were causing side effects that ulitimately 
+      stopped the HCI init fuction from completing. THus it never send the internal packet to print out ("Working!\n")
+      
+      It is important to note that this did not fix the original issue.
+      
+  probing some more.
