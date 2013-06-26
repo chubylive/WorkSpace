@@ -29,3 +29,15 @@ It also contains a LPC1769 port of BTStack.
       It is important to note that this did not fix the original issue.
       
   probing some more.
+  
+  
+  SOLUTION:
+  so the CC2540 is strange. It would seem that instead of processing just HCI commands straight up. The device implements 
+  the GAP layer. As such it expects GAP commands. How ever after send GAP command that do similar thing to the coresponding
+  HCI command. I am able to send the HCI COMMAND.
+  
+  Concerns: GAP as it is implemented on the 8051 has for profiles all of which do not same much about scanning. I have not 
+  started scanning. To test the scannning functionaly I intend to Setup up the first module to ADVERTISE and SCAN and then 
+  the second device similary and see if i am able to scan.
+  
+  
